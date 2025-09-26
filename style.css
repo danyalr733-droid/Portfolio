@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+
+}
+   .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0, 0, 0.5);
+
+    background: linear-gradient(90deg, #0f2027,#203a43,#2c5364);
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.navlinks ul{
+    display: flex;
+    
+    list-style: none;
+
+    text-align: center;
+
+}
+.navlinks ul li{
+    
+    margin: 0 15px;
+}
+.navlinks ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.navlinks ul li a:hover{
+    color: #00e5ff;
+}
+.taruff{
+    height: 100vh;
+    background-color: #031a24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.taruff::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+
+}
+.taruff-text{
+    position: relative;
+
+
+
+}
+.taruff-text h1{
+    font-size: 52px;
+
+    animation: 1s ease-in-out;
+
+}
+.taruff-text span{
+    color: #00e5ff;
+}
+.taruff-text p{
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    
+    height: 50px;
+    margin-top: 20px;
+    padding: 18px 22px;
+    border-radius: 70%;
+    background: linear-gradient(135deg, #0b4861,#eefaff);
+
+}
+.btn:hover{
+    transform: scale(0.9);
+    background-color: #0f2027;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.about{
+    padding: 80px 20px;
+        background: linear-gradient(135deg, #f9f9f9,#eefaff);
+
+}
+.aboutcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+}
+img{
+    border-radius: 900px;
+    height: 300px;
+    width: 250px;
+    
+  
+}
+.about-img img:hover{
+    transform: scale(1.05);
+}
+.abouttext{
+    flex: 1;
+    min-width: 340px;
+    text-align: center;
+}
+.abouttext h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #203a43;
+    position: relative;
+}
+.abouttext h2::after{
+    width: 60px;
+    height: 4px;
+    background: #00e5ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 2px;
+}
+.abouttext p{
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+.abouttext span{
+    color: #00e5ff;
+    font-weight: bold;
+}
+section{
+    padding: 70px 20px;
+    text-align: center;
+}
+h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #203a43;
+}
+.portfoliogrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+
+}
+.card{
+    background: white;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0, 0, 0.2);
+    transition:  transform  0.3s, boxshadow 0.3s;
+    
+}
+.card:hover{
+    transform: translate(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+.contact input{
+    margin: 10px 0;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #f4f4f4;
+    font-size: 16px;
+}
+.contact input:focus{
+    outline: 2px solid #00e5ff;
+}
+.contact button{
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg #00e5ff,#0097a7);
+}
+.contact button:hover{
+    background: #0097a7;
+   
+}
+footer{
+    background: #203A43;
+     color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+@media(max-width: 768px){
+ 
+    
+    
+}
